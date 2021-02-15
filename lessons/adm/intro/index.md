@@ -86,7 +86,7 @@ a jen 10% mají zabrat formální lekce.
 Nám lekce zaberou dvě hodiny týdně; zbytek si dopočítej.
 
 
-[Jitsi]: http://meet.jitsi.com/
+[Jitsi]: http://meet.jit.si/
 [Google Meet]: https://apps.google.com/meet/
 [Zoom]: https://zoom.us/
 
