@@ -20,21 +20,27 @@ plan:
   date: 2021-02-22
   materials:
   - url: https://youtu.be/so10Ud-YlKE
-    title: Úvod – video
+    title: Úvod a pozvánka – video
   - lesson: adm/intro
+    title: Úvod a pozvánka – text
+  - lesson: adm/whats
+    title: Úvod k instalaci – text
   - lesson: beginners/cmdline
   - lesson: beginners/install
   - lesson: beginners/venv-setup
   - lesson: beginners/install-editor
+  - lesson: beginners/first-steps
   - title: Tahák na klávesnici (PDF)
     url: https://pyvec.github.io/cheatsheets/keyboard/keyboard-cs.pdf
     type: cheatsheet
+  - title: 'Úkoly (🧮)'
+    url: https://projekty.pyladies.cz/session?course=online-2021-spring&session=preparation
+    type: homework
 
 - slug: expressions
   title: 'Výrazy a podmínky'
   date: 2021-03-01
   future-materials:
-  - lesson: beginners/first-steps
   - lesson: beginners/hello-world
   - lesson: beginners/print
   - lesson: beginners/variables
