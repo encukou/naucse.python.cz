@@ -23,13 +23,35 @@ plan:
     title: Úvod a pozvánka – video
   - lesson: adm/intro
     title: Úvod a pozvánka – text
+
+  - url: https://youtu.be/i2QupnsdktU
+    title: Úvod k instalaci – video
   - lesson: adm/whats
     title: Úvod k instalaci – text
+
+  - url: https://youtu.be/GGMg8O4hE0c
+    title: Příkazová řádka – Linux & macOS – video
+  - url: https://youtu.be/kriVWJmXpZc
+    title: Příkazová řádka – Windows – video
   - lesson: beginners/cmdline
+
+  - url: https://youtu.be/7Qi7cSkoBA0
+    title: Instalace Pythonu – Linux – video
   - lesson: beginners/install
+
+  - url: https://youtu.be/AFVvpfQB0V0
+    title: Nastavení prostředí – video
   - lesson: beginners/venv-setup
+
+  - url: https://youtu.be/JcXUCuneX04
+    title: Instalace editoru – video
   - lesson: beginners/install-editor
+
+  - url: https://youtu.be/0Poe25XdKIA
+    title: První příkazy v Pythonu – video
   - lesson: beginners/first-steps
+    title: První příkazy v Pythonu
+
   - title: Tahák na klávesnici (PDF)
     url: https://pyvec.github.io/cheatsheets/keyboard/keyboard-cs.pdf
     type: cheatsheet
