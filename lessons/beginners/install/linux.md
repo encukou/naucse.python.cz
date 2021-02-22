@@ -108,6 +108,3 @@ alternativu, Virtualenv:
   {% endfilter %}
 
 Používáš-li jinou distribuci, doufám, že instalovat programy už umíš.
-
-Instaluješ-li Virtualenv, **zapamatuj si**, že ho budeš muset použít později
-při vytváření virtuálního prostředí.
