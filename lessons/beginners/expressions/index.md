@@ -65,8 +65,8 @@ menších nebo vysvětlit pomocí komentáře.
 Je ale dobré mít povědomí o tom, jak složité výrazy „fungují“,
 aby ses jich nemusel{{a}} bát.
 Měl{{a}} bys být schopn{{gnd('ý', 'á')}} vysvětlit, co se stane,
-když se Pythonu zeptáš, kolik je -<var>b</var> + (<var>b</var>² +
-4<var>a</var><var>c</var>)⁰·⁵ / (2<var>a</var>), abys pak věděl{{a}}, co za
+když se Pythonu zeptáš, kolik je (-<var>b</var> + (<var>b</var>² -
+4<var>a</var><var>c</var>)⁰·⁵) / (2<var>a</var>), abys pak věděl{{a}}, co za
 tebe Python dělá.
 
 ```python
@@ -75,21 +75,21 @@ b = 5
 c = 3
 
 
-x = -b + (b ** 2 + 4 * a * c) ** 0.5 / (2 * a)
-#    |    |            |   |                |
-x = -5 + (5 ** 2 + 4 * 2 * 3) ** 0.5 / (2 * 2)
-#         ╰──┬─╯   ╰─┬─╯               ╰──┬──╯
-x = -5 + (  25   +   8   * 3) ** 0.5 /    4
-#                   ╰────┬─╯
-x = -5 + (  25   +      24  ) ** 0.5 /    4
-#        ╰───────┬──────────╯
-x = -5 +         49           ** 0.5 /    4
-#                ╰──────┬──────────╯
-x = -5 +               7.0           /    4
-#                      ╰─────────────┬────╯
-x = -5 +                            1.75
-#   ╰──────────────┬───────────────────╯
-x =              -3.25
+x = (-b + (b ** 2 - 4 * a * c) ** 0.5) / (2 * a)
+#     |    |            |   |                 |
+x = (-5 + (5 ** 2 - 4 * 2 * 3) ** 0.5) / (2 * 2)
+#          ╰──┬─╯   ╰─┬─╯                ╰──┬──╯
+x = (-5 + (  25   -   8   * 3) ** 0.5) /    4
+#                     ╰───┬─╯
+x = (-5 + (  25   -      24  ) ** 0.5) /    4
+#         ╰───────┬──────────╯
+x = (-5 +         1            ** 0.5) /    4
+#                 ╰──────┬──────────╯
+x = (-5 +                1)            /    4
+#    ╰────────────┬──────╯
+x =              -4                    /    4
+#                 ╰────────────┬────────────╯
+x =                           -1.0
 ```
 
 Výrazy se používají na více místech Pythonu než jen v přiřazování
