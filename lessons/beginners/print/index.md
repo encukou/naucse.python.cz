@@ -68,7 +68,7 @@ ahoj!
 >>> quit()
 ```
 
-To `print` (a i `exit`) je *funkce*.
+To `print` (a i `quit`) je *funkce*.
 O funkcích se obecně budeme bavit později;
 teď stačí vědět, že když napíšeš `print` a za to něco do závorky,
 Python to vypíše,
@@ -87,7 +87,7 @@ Kdybys třeba v příkazu `print(Jak se máš?)` zapomněl{{a}} uvozovky,
 dostaneš následující hlášku:
 
 <pre>
-  File "<span class="plhome">~/naucse-python</span>/02/ahoj.py", line <span class="err-lineno">11</span>
+  File "<span class="plhome">~/naucse-python</span>/01/ahoj.py", line <span class="err-lineno">11</span>
     print(Jak se máš?)
               ^
 <span class="err-exctype">SyntaxError</span>: invalid syntax
@@ -116,7 +116,7 @@ o pár řádků výš nebo níž:
 Python občas nesdílí lidské představy o tom, kde přesně chyba *je*.
 Ukáže jen, kde si jí sám *všimnul*.
 
-V našem případě je chyba v tom, že kolem řetězce *V míse je maso* nejsou uvozovky.
+V našem případě je chyba v tom, že kolem řetězce *Jak se máš?* nejsou uvozovky.
 Přidej je a program znovu spusť.
 Jestli funguje, gratuluji!
 Jinak chybu opět oprav a opakuj, dokud to nebude fungovat :)
@@ -143,7 +143,7 @@ print("Součet čísel 3 a 8 je", 3 + 8)
 Proč jsou některé hodnoty v uvozovkách a některé ne?
 Pokud chceš v Pythonu pracovat s *textem*, musíš ho obalit do uvozovek,
 aby Python věděl, že se k němu má chovat jinak než k *instrukcím* jako `print`.
-Více se dozvíš později, zatím si zapamatuj, že se takovýto text označuje označuje v programovací
+Více se dozvíš později, zatím si zapamatuj, že se takovýto text označuje v programovací
 hantýrce jako `řetězec`.
 
 Obecně může být v závorkách za `print` několik *výrazů*

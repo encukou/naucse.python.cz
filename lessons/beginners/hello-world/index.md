@@ -41,7 +41,7 @@ Až si na ně zvykneš, můžou ti pomoci najít překlepy.
 
 Otevři si příkazovou řádku.
 Pomocí `cd` donaviguj do adresáře, kde máš soubory ke kurzům Pythonu,
-tedy adresáře `venv1` a `01`.
+tedy adresáře `venv` a `01`.
 
 > [note]
 > S příkazovou řádkou jsme se seznámil{{gnd('i', 'y', both='i')}}
