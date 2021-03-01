@@ -89,7 +89,7 @@ x = (-5 +                1)            /    4
 #    ╰────────────┬──────╯
 x =              -4                    /    4
 #                 ╰────────────┬────────────╯
-x =                           -1
+x =                           -1.0
 ```
 
 Výrazy se používají na více místech Pythonu než jen v přiřazování
