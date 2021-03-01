@@ -37,6 +37,8 @@ plan:
 
   - url: https://youtu.be/7Qi7cSkoBA0
     title: Instalace Pythonu – Linux – video
+  - url: https://youtu.be/Xr6liKJzRGA
+    title: Instalace Pythonu – Windows – video
   - lesson: beginners/install
 
   - url: https://youtu.be/AFVvpfQB0V0
@@ -62,11 +64,14 @@ plan:
 - slug: expressions
   title: 'Výrazy a podmínky'
   date: 2021-03-01
-  future-materials:
+  materials:
+  - lesson: adm/close-paren
   - lesson: beginners/hello-world
   - lesson: beginners/print
   - lesson: beginners/variables
+  - lesson: beginners/expressions
   - lesson: beginners/comparisons
+  - lesson: beginners/and-or
   - title: 'Úkoly (✊✌✋)'
     url: null
     type: homework
@@ -76,8 +81,6 @@ plan:
   title: 'Funkce a cykly'
   date: 2021-03-08
   future-materials:
-  - lesson: beginners/expressions
-  - lesson: beginners/and-or
   - lesson: beginners/functions
   - lesson: beginners/basic-functions
   - lesson: intro/turtle

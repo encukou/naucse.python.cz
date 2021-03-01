@@ -27,7 +27,7 @@ a obsah jako <var>S</var> = <var>a</var>².
 > znalostmi ze základní školy.
 
 Výsledky by měl spočítat Python; číslo 1424 nebo 126736 přímo do programu nepiš.<br>
-Jestli si nevíš rady, podívej se na program <code>printing.py</code>
+Jestli si nevíš rady, podívej se na program <code>ahoj.py</code>
 z [lekce o `print`]({{ lesson_url('beginners/print') }}), kde jeden řádek dělá něco podobného.
 
 Až budeš mít program hotový, nebo až budeš chtít vyzkoušet rozepsaný kousek,

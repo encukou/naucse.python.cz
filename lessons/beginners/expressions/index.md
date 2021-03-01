@@ -50,11 +50,11 @@ vysledek = 4 +   6
 #          ╰──┬──╯
 vysledek =  10
 
-pozrdav = "Volejte třikrát: " + "Sláva! " * 3
-#                               ╰─────┬─────╯
-pozrdav = "Volejte třikrát: " + "Sláva! Sláva! Sláva! "
-#         ╰────────────────────┬──────────────────────╯
-pozrdav = "Volejte třikrát: Sláva! Sláva! Sláva! "
+vyzva = "Volejte třikrát: " + "Sláva! " * 3
+#                             ╰─────┬─────╯
+vyzva = "Volejte třikrát: " + "Sláva! Sláva! Sláva! "
+#       ╰────────────────────┬──────────────────────╯
+vyzva = "Volejte třikrát: Sláva! Sláva! Sláva! "
 ```
 
 Python nemá problém se složitými výrazy – vyhodnocování funguje vždy stejně.
@@ -94,18 +94,5 @@ x =              -3.25
 
 Výrazy se používají na více místech Pythonu než jen v přiřazování
 do proměnných.
-Třeba podmínka u `if` je taky výraz a vyhodnocuje se stejně jako ostatní
-výrazy:
-
-```python
-strana = -5
-
-if strana <= 0:
-    print("Strana musí být kladná!")
-```
-
-```python
-if strana <= 0:
-#  ╰──────┬──╯
-if      True  :
-```
+Třeba pro porovnání dvou hodnot.
+Ale o tom zase příště.

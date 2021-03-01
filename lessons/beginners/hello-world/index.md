@@ -24,17 +24,24 @@ print("Ahoj světe!")
 Pak soubor ulož jako `ahoj.py`:
 
 * V adresáři, kde máš soubory ke kurzům Pythonu, si založ adresář pojmenovaný
-  podle čísla lekce (např. `02`).
+  podle čísla lekce: `01`.
   Měl by být vedle tvého virtuálního prostředí.
 * Do něj pak soubor ulož pod jménem `ahoj.py`.
 
 Pokud máš v ukládacím okýnku možnost zvolit *kódování*, zvol `UTF-8`.
 Můžeš–li zvolit typ souboru, zvol `.py` nebo „všechny soubory“.
 
+Po uložení s příponou `.py` by měl editor program obarvit: text v uvozovkách
+by měl mít jinou barvu než slovo `print`.
+Barvy napovídají, jak bude Python souboru rozumět.
+Až si na ně zvykneš, můžou ti pomoci najít překlepy.
+
+
 ## Spuštění
 
 Otevři si příkazovou řádku.
-Pomocí `cd` donaviguj do adresáře, kde máš soubory ke kurzům Pythonu.
+Pomocí `cd` donaviguj do adresáře, kde máš soubory ke kurzům Pythonu,
+tedy adresáře `venv1` a `01`.
 
 > [note]
 > S příkazovou řádkou jsme se seznámil{{gnd('i', 'y', both='i')}}
@@ -47,15 +54,16 @@ Aktivuj si virtuální prostředí.
 > Příkaz k tomu jsme si ukázali na konci
 > [návodu na tvorbu virtuálního prostředí](../venv-setup/); končí `activate`.
 
+Pak pomocí `cd 01` zajdi do adresáře s programem.
 
-Pak a zadej tento příkaz:
+A pak zadej tento příkaz:
 
 ```console
 (venv)$ python ahoj.py
 ```
 
 Pokud se vypíše hláška `Ahoj světe!`, gratuluji!
-Napsal{{a}} jsi svůj první program v Pythonu!
+Napsal{{a}} a spustil{{a}} jsi svůj první program v Pythonu!
 
 Jestli to nefunguje, zkontroluj, že:
 
@@ -81,26 +89,3 @@ kouče.
 {%- else -%}
 zkušenějšího programátora. <!-- XXX: where to direct people? -->
 {% endif %}
-
-
-> [style-note] Typografická vsuvka
->
-> V Pythonu je většinou jedno, kde napíšeš mezeru. Stejně jako náš příkaz
-> `print("Ahoj světe!")` by fungovalo třeba:
->
-> ```python
-> print      (   "Ahoj světe!"     )
-> ```
->
-> Je ale zvykem dodržovat určitá pravidla.
-> Jako v češtině se po otvírací závorce a za
-> ozavírací závorkou nepíše mezera.
-> Na rozdíl od češtiny ale mezeru nepiš ani mezi `print` a závorkou.
-> „Správně“ je tedy:
->
-> ```python
-> print("Ahoj světe!")
-> ```
->
-> V rámci uvozovek má pak každá mezera význam: když napíšeš
-> `"    Ahoj      světe!"`, mezery navíc se objeví ve výsledné hlášce.

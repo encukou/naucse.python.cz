@@ -62,51 +62,54 @@ nebo pusť `python` z příkazové řádky.)
     </tr>
 </table>
 
-Hodnoty provnání jsou takzvané *booleovské* hodnoty
-(angl. *boolean*, podle [G. Boolea](http://en.wikipedia.org/wiki/George_Boole)).
-V Pythonu je můžeš použít vždycky, když potřebuješ vědět, jestli něco platí
-nebo neplatí.
-Jsou jenom dvě – buď `True` (pravda), nebo `False` (nepravda).
-
-Jako všechny hodnoty, `True` a `False` můžeš přiřadit do proměnných:
+Podobně jako u jiných operátorů se pomocí `==`, `!=` atd. tvoří výrazy,
+které Python umí vyhodnotit.
 
 ```python
-pravda = 1 < 3
-print(pravda)
+vysledek = 3 > 0
+#          ╰─┬─╯
+#           ano (pravda, True)
+print(vysledek)
 
-nepravda = 1 == 3
-print(nepravda)
+vysledek = 3 == 0
+#          ╰─┬──╯
+#            ne (nepravda, False)
+print(vysledek)
 ```
+
+Výsledky provnání jsou takzvané *booleovské* hodnoty
+(angl. *boolean*, podle [G. Boolea](http://en.wikipedia.org/wiki/George_Boole)).
+Jmenují se `True` (pravda), nebo `False` (nepravda).
+V Pythonu je můžeš použít vždycky, když potřebuješ vědět, jestli něco platí
+nebo neplatí.
 
 > [note]
 > Všimni si, že rovnost zjistíš pomocí dvou rovnítek: `3 == 3`.
 > Jedno rovnítko přiřazuje do proměnné; dvě rovnítka porovnávají.
 
-Slova <code>True</code> a <code>False</code> můžeš
-v programu použít i přímo,
+Slova `True` a `False` můžeš v programu použít i přímo,
 jen si dej pozor na velikost písmen:
 
 ```python
 print(True)
-print(False)
+uzivatel_je_administrator = False
 ```
 
 ## Podmínky
 
 Teď oprášíme program na výpočet obvodu a obsahu.
 
-Otevři si v editoru nový soubor.
-Jestli ještě v adresáři, kde máš soubory ke kurzům Pythonu,
-nemáš adresář pro tuto lekci (třeba `02`), vytvoř si ho.
-Nový soubor ulož do něj pod jménem `if.py`.
+Otevři si v editoru nový soubor a ulož ho pod jménem `if.py`.
+Zkontroluj, že je v adresáři pro tuto lekci.
 
 Do souboru pak napiš následující program:
 
 ```python
-strana = float(input('Zadej stranu čtverce v centimetrech: '))
+# Tento program počítá obvod a obsah čtverce.
+
+strana = float(input('Zadej stranu čtverce v centimetrech: '))
 print('Obvod čtverce se stranou', strana, 'je', 4 * strana, 'cm')
-print('Obsah čtverce se stranou', strana, 'je', strana * strana, 'cm2')
-```
+print('Obsah čtverce se stranou', strana, 'je', strana * strana, 'cm2')```
 
 Program spusť. Funguje?
 
