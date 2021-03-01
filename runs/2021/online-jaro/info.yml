@@ -20,37 +20,37 @@ plan:
   date: 2021-02-22
   materials:
   - url: https://youtu.be/so10Ud-YlKE
-    title: Úvod a pozvánka – video
+    title: (16:07) Úvod a pozvánka – video
   - lesson: adm/intro
     title: Úvod a pozvánka – text
 
   - url: https://youtu.be/i2QupnsdktU
-    title: Úvod k instalaci – video
+    title: (7:12) Úvod k instalaci – video
   - lesson: adm/whats
     title: Úvod k instalaci – text
 
   - url: https://youtu.be/GGMg8O4hE0c
-    title: Příkazová řádka – Linux & macOS – video
+    title: (13:50) Příkazová řádka – Linux & macOS – video
   - url: https://youtu.be/kriVWJmXpZc
-    title: Příkazová řádka – Windows – video
+    title: (22:34) Příkazová řádka – Windows – video
   - lesson: beginners/cmdline
 
   - url: https://youtu.be/7Qi7cSkoBA0
-    title: Instalace Pythonu – Linux – video
+    title: (8:15) Instalace Pythonu – Linux – video
   - url: https://youtu.be/Xr6liKJzRGA
-    title: Instalace Pythonu – Windows – video
+    title: (4:48) Instalace Pythonu – Windows – video
   - lesson: beginners/install
 
   - url: https://youtu.be/AFVvpfQB0V0
-    title: Nastavení prostředí – video
+    title: (7:48) Nastavení prostředí – video
   - lesson: beginners/venv-setup
 
   - url: https://youtu.be/JcXUCuneX04
-    title: Instalace editoru – video
+    title: (8:01) Instalace editoru – video
   - lesson: beginners/install-editor
 
   - url: https://youtu.be/0Poe25XdKIA
-    title: První příkazy v Pythonu – video
+    title: (7:23) První příkazy v Pythonu – video
   - lesson: beginners/first-steps
     title: První příkazy v Pythonu
 
