@@ -65,15 +65,32 @@ plan:
   title: 'Výrazy a podmínky'
   date: 2021-03-01
   materials:
+  - url: https://youtu.be/r0esiaghzrY?t=483
+    title: (1:49) Neuzavřená závorka – video (+ domácí úkoly v první části videa)
   - lesson: adm/close-paren
+
+  - url: https://youtu.be/9aJcvOfleFs
+    title: (7:50) První program – video
   - lesson: beginners/hello-world
+
+  - url: https://youtu.be/14-LVG9Edng
+    title: (12:38) Print a chybové hlášky – video
   - lesson: beginners/print
+
+  - url: https://youtu.be/-zKws24FmCg
+    title: (15:08) Proměnné – video
   - lesson: beginners/variables
+
+  - url: https://youtu.be/nNXDXuN6Smg
+    title: (8:32) Vyhodnocování výrazů – video
   - lesson: beginners/expressions
+
+  - url: https://youtu.be/Q1YJqWzfnck
+    title: (17:27) Porovnání – video
   - lesson: beginners/comparisons
-  - lesson: beginners/and-or
+
   - title: 'Úkoly (✊✌✋)'
-    url: null
+    url: https://projekty.pyladies.cz/session?course=online-2021-spring&session=expressions
     type: homework
 
 
@@ -81,6 +98,7 @@ plan:
   title: 'Funkce a cykly'
   date: 2021-03-08
   future-materials:
+  - lesson: beginners/and-or
   - lesson: beginners/functions
   - lesson: beginners/basic-functions
   - lesson: intro/turtle
