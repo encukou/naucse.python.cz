@@ -99,25 +99,27 @@ plan:
   date: 2021-03-08
   materials:
   - url: https://youtu.be/w_d8VKS8i48
-    title: (17:26) Funkce
+    title: (17:26) Funkce – video
   - lesson: beginners/functions
 
   - url: https://youtu.be/udEOvGIuZrs
-    title: (15:51) Užitečné funkce
+    title: (15:51) Užitečné funkce – video
   - lesson: beginners/basic-functions
 
-  #- url: 
-  #  title: (:) 
+  - url: https://youtu.be/A__45ibnsnc
+    title: (33:02) Želva a cykly – video
   - lesson: intro/turtle
 
-  #- url: 
-  #  title: (:) 
+  - url: https://youtu.be/I_mkND45dB0
+    title: (6:57) Cyklus While – video
   - lesson: beginners/while
 
+  - url: https://youtu.be/fFh1LiksgdA
+    title: (9:28) Přepisování proměnných – video
   - lesson: beginners/reassignment
 
   - url: https://youtu.be/5Mc-cgoaM10
-    title: (7:58) Nebo anebo ne
+    title: (7:58) Nebo anebo a – video
   - lesson: beginners/and-or
 
   - title: Tahák na užitečné funkce (PDF)
@@ -125,8 +127,8 @@ plan:
     type: cheatsheet
 
   - title: "Úkol (\U0001f422 \U0001f0b2\U0001f0b1)"
-    url: null
-    type: https://projekty.pyladies.cz/session?course=online-2021-spring&session=loops
+    url: https://projekty.pyladies.cz/session?course=online-2021-spring&session=loops
+    type: homework
 
 
 - slug: str
