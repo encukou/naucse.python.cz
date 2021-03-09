@@ -352,7 +352,7 @@ for i in range(100):
 * Zopakuj 100krát:
   * Vypiš `'Nikdy nebudu odsazovat o tři mezery!'`
 
-Python píše hlášky, jednu za druhou, a u toho si v promněnné <var>i</var>
+Python píše hlášky, jednu za druhou, a u toho si v proměnné <var>i</var>
 počítá, jak už je daleko.
 
 > [style-note]
