@@ -134,16 +134,28 @@ plan:
 - slug: str
   title: 'Řetězce'
   date: 2021-03-15
-  future-materials:
+  materials:
+  - url: https://youtu.be/xdZWIvryP20
+    title: (19:54) Zápis řetězců – video
   - lesson: beginners/str
+
+  - url: https://youtu.be/QOamCtzLPAo
+    title: (16:12) Výběr z řetězců – video
   - lesson: beginners/str-index-slice
+
+  - url: https://youtu.be/I3CB2YihRh8
+    title: (9:19) Řetězcové funkce a metody – video
   - lesson: beginners/str-methods
+
+  - url: https://youtu.be/2-r2e9aM1HU
+    title: (11:52) Šablony (formátovací řetězce) – video
   - lesson: beginners/fstring
+
   - title: Řetězcový tahák (PDF)
     url: https://pyvec.github.io/cheatsheets/strings/strings-cs.pdf
     type: cheatsheet
   - title: "Úkol (|‾)"
-    url: null
+    url: https://projekty.pyladies.cz/session?course=online-2021-spring&session=str
     type: homework
 
 
