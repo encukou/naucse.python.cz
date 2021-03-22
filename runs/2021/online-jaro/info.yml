@@ -185,7 +185,7 @@ plan:
   - title: Python Tutor
     url: http://pythontutor.com/visualize.html#mode=edit
   - title: "Úkol (⚁⚃⚅)"
-    url: null
+    url: https://projekty.pyladies.cz/session?course=online-2021-spring&session=def
     type: homework
 
 
