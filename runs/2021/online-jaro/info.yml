@@ -162,11 +162,26 @@ plan:
 - slug: def
   title: 'Vlastní funkce'
   date: 2021-03-22
-  future-materials:
+  materials:
+
+  - url: https://youtu.be/UdYgqyQMt8Q
+    title: (14:27)  – video
   - lesson: beginners/def
+
+  - url: https://youtu.be/4M6Yq9ZyObs
+    title: (8:54) Vrátit nebo vypsat? – video
+  - lesson: beginners/prefer-return
+
+  - url: https://youtu.be/I_DpjBDQy_k
+    title: (3:58) Chybové hlášky ze zanořených funkcí – video
   - lesson: beginners/nested-traceback
+
+  - url: https://youtu.be/gbjXnMmuAxw
+    title: (14:25) Lokální proměnné – video
   - lesson: beginners/local-variables
+
   - lesson: beginners/recursion
+
   - title: Python Tutor
     url: http://pythontutor.com/visualize.html#mode=edit
   - title: "Úkol (⚁⚃⚅)"
