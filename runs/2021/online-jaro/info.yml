@@ -204,6 +204,8 @@ plan:
     title: (10:32) Moduly – video
   - lesson: beginners/modules
 
+  - url: https://youtu.be/bZ4iiSDe_4g
+    title: (5:56) Cyklické importy – video
   - lesson: beginners/circular-imports
 
   - title: Výjimkový tahák (PDF)
