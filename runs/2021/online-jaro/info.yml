@@ -219,11 +219,25 @@ plan:
 - slug: test
   title: 'Rozhraní a testy'
   date: 2021-04-05
-  future-materials:
+  materials:
+
+
+  - url: https://youtu.be/2UMFZ6tluPg
+    title: (6:51) Rozhraní – video
   - lesson: beginners/interfaces
+
+  - url: https://youtu.be/-KS_VRerZQ0
+    title: (15:25) Testování – video
   - lesson: beginners/testing
+
+  - url: https://youtu.be/S6HyFIUyPTw
+    title: (10:12) Spouštěcí moduly – video
+  - url: https://youtu.be/s-KPxX5ZcMs
+    title: (3:53) Negativní testy – video
+  - lesson: beginners/main-module
+
   - title: "Úkol (✕✕✕)"
-    url: null
+    url: https://projekty.pyladies.cz/session?course=online-2021-spring&session=test
     type: homework
 
 
@@ -231,6 +245,10 @@ plan:
   title: 'Seznamy a n-tice'
   date: 2021-04-12
   future-materials:
+
+ # Comment on: https://studio.youtube.com/video/hWJVIZL3VvU/comments
+ #Můj vysoce inteligentní piškvorková funkce už sice nikoho v soutěži nerozcupuje:-), ale taháky se opakují i v nejnovějších kurzech, tak aspoň upozorním, že v tom se seznamy chybí metoda insert, třebaže se ve výukových materiálech objevuje.
+#Díky, že je kurz takto zdarma a volně k dispozici všem! 
   - lesson: beginners/list
   - lesson: beginners/tuple
   - lesson: beginners/nested-list
