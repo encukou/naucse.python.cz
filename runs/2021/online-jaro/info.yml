@@ -248,10 +248,12 @@ plan:
 
   - url: https://youtu.be/abIMJjb9Nxw
     title: (11:10) Seznamy – Úvod – video
-  #- url: 
-  #  title: (32:24) Co všechno umí seznamy – video
+  - url: https://youtu.be/-gINX_pOtQo
+    title: (32:52) Co všechno umí seznamy – video
   - lesson: beginners/list
 
+  - url: https://youtu.be/dObtA75Ouzk
+    title: (9:51) N-tice – video
   - lesson: beginners/tuple
 
   #- lesson: beginners/nested-list
