@@ -244,19 +244,23 @@ plan:
 - slug: list
   title: 'Seznamy a n-tice'
   date: 2021-04-12
-  future-materials:
+  materials:
 
- # Comment on: https://studio.youtube.com/video/hWJVIZL3VvU/comments
- #Můj vysoce inteligentní piškvorková funkce už sice nikoho v soutěži nerozcupuje:-), ale taháky se opakují i v nejnovějších kurzech, tak aspoň upozorním, že v tom se seznamy chybí metoda insert, třebaže se ve výukových materiálech objevuje.
-#Díky, že je kurz takto zdarma a volně k dispozici všem! 
+  - url: https://youtu.be/abIMJjb9Nxw
+    title: (11:10) Seznamy – Úvod – video
+  #- url: 
+  #  title: (32:24) Co všechno umí seznamy – video
   - lesson: beginners/list
+
   - lesson: beginners/tuple
-  - lesson: beginners/nested-list
+
+  #- lesson: beginners/nested-list
+
   - title: Tahák na seznamy (PDF)
     url: https://pyvec.github.io/cheatsheets/lists/lists-cs.pdf
     type: cheatsheet
   - title: "Úkol – [\U0001f436\U0001f431\U0001f430\U0001f40d]"
-    url: null
+    url: https://projekty.pyladies.cz/session?course=online-2021-spring&session=list
     type: homework
 
 
