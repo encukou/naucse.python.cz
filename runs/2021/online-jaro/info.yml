@@ -296,14 +296,25 @@ plan:
 - slug: dict
   title: 'Slovníky'
   date: 2021-04-26
-  future-materials:
+  materials:
+
+  - url: https://youtu.be/OVnUhWwd2C0
+    title: (19:23) Slovníky – video
   - lesson: beginners/dict
+
+  #- url: 
+  #  title: (:)  – video
+  - lesson: beginners/dict-with-list-values
+
+  #- url: 
+  #  title: (:)  – video
   - lesson: intro/json
+
   - title: Slovníkový tahák (PDF)
     url: https://pyvec.github.io/cheatsheets/dicts/dicts-cs.pdf
     type: cheatsheet
   - title: "Úkol (💾)"
-    url: null
+    url: https://projekty.pyladies.cz/session?course=online-2021-spring&session=dict
     type: homework
 
 - slug: class
