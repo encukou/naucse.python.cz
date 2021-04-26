@@ -302,12 +302,12 @@ plan:
     title: (19:23) Slovníky – video
   - lesson: beginners/dict
 
-  #- url: 
-  #  title: (:)  – video
+  - url: https://youtu.be/pQ268T2IZCo
+    title: (4:42) Více hodnot v jednom záznamu slovníku – video
   - lesson: beginners/dict-with-list-values
 
-  #- url: 
-  #  title: (:)  – video
+  - url: https://youtu.be/nPUSH7gSI4o
+    title: (12:54) Kódování dat – JSON – video
   - lesson: intro/json
 
   - title: Slovníkový tahák (PDF)
