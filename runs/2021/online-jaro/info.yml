@@ -320,28 +320,26 @@ plan:
 - slug: class
   title: 'Třídy a dědičnost'
   date: 2021-05-03
-  future-materials:
-  - title: Turnaj v piškvorkách
-    url: null
+  materials:
+
+  - url: https://youtu.be/x4iJDPOSv4A
+    title: (22:26) Třídy – video
   - lesson: beginners/class
+
+  - url: 
+    title: (:) Dědičnost – video
   - lesson: beginners/inheritance
+
   - title: "Úkol (♟♚)"
-    url: null
+    url: https://projekty.pyladies.cz/session?course=online-2021-spring&session=class
     type: homework
 
-#- slug: bonus0
-  #title: 'Bonus'
-  #date: 2021-05-10
-  #materials:
-  #- lesson: klondike/cards
-  #- lesson: klondike/decks
-  #- lesson: klondike/game
-  #- title: "Nepovinný úkol (🂱)"
-    #url: null
-    #type: homework
-
-  #- title: Cvičebnice Pythonu z FI MUNI
-    #url: https://www.fi.muni.cz/IB111/sbirka/
+- slug: end
+  title: 'Ukončení'
+  date: 2021-05-10
+  materials:
+  - title: Cvičebnice Pythonu z FI MUNI
+    url: https://www.fi.muni.cz/IB111/sbirka/
 
 #- slug: bonus1
   #title: 'Bonus'
