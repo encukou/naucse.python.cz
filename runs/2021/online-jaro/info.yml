@@ -335,10 +335,15 @@ plan:
     type: homework
 
 - slug: end
-  title: 'Ukončení'
+  title: 'Závěr'
   date: 2021-05-10
   materials:
-  - title: Cvičebnice Pythonu z FI MUNI
+
+  - url: https://youtu.be/N90FxVr4H-M
+    title: (6:03) Závěr – video
+  - lesson: adm/bye
+
+  - title: Odkazy na další materiály
     url: https://www.fi.muni.cz/IB111/sbirka/
 
 #- slug: bonus1
