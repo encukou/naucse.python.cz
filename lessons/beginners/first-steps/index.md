@@ -112,7 +112,7 @@ Na to má Python operátory `//` (podíl) a `%` (zbytek):
 ```
 
 Časem zjistíš že dělení se zbytkem je v programování překvapivě užitečné.
-Jestli si děláš posnámky, `//` i `%` si do nich určitě přidej!
+Jestli si děláš poznámky, `//` i `%` si do nich určitě přidej!
 
 
 ### Ukončení
