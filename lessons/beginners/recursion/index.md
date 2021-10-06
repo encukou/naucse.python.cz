@@ -93,11 +93,13 @@ pruzkum(0)
   * Zavolá funkci `pruzkum` s hloubkou 10 m:
     * Vypíše `Rozhlížím se v hloubce 10 m`
     * Zkontroluje, že `10 ≥ 30` (což neplatí)
-    * Vypíše `Zanořuju se (na 10 m)`
+    * Vypíše `Zanořuju se (z 10 m)`
     * Zavolá funkci `pruzkum` s hloubkou 20 m:
+      * Vypíše `Rozhlížím se v hloubce 20 m`
       * Zkontroluje, že `20 ≥ 30` (což neplatí)
-      * Vypíše `Zanořuju se (na 20 m)`
-        * Zavolá funkci `pruzkum` s hloubkou 30 m:
+      * Vypíše `Zanořuju se (z 20 m)`
+      * Zavolá funkci `pruzkum` s hloubkou 30 m:
+          * Vypíše `Rozhlížím se v hloubce 30 m`
           * Zkontroluje, že `30 ≥ 30` (což platí! konečně!)
             * Vypíše `Už toho bylo dost!`
             * a skončí
