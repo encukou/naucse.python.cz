@@ -25,7 +25,7 @@ forward(50)
 ```
 
 Ukáže se okýnko se šipkou, které nezavírej.
-Dej ho tak, abys viděla i příkazovou řádku
+Dej ho tak, abys viděl{{a}} i příkazovou řádku
 i nové okýnko.
 
 ## A kde je ta želva?
