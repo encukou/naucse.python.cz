@@ -1,0 +1,97 @@
+<h1>Interaktivní režim Pythonu</h1>
+<p>Chceš-li si začít hrát s Pythonem, otevři <em>příkazový řádek</em> a aktivuj virtuální prostředí.
+Zkontroluj si, na začátku příkazové řádky ti svítí <code>(venv)</code>.</p>
+<p>Je-li tomu tak, nezbývá než – konečně – pustit Python. K tomu použij příkaz <code>python</code>:</p>
+<div class="highlight"><pre><span></span><span class="gp">$ </span>python
+<span class="go">Python 3.6.6 (...)</span>
+<span class="go">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div><p>Příkaz vypíše několik informací. Z prvního řádku se můžeš ujistit že používáš Python 3.
+(Vidíš-li číslo jako <code>2.7.18</code>, něco je špatně – popros o radu kouče.
+Novější verze, např. <code>3.9.1</code>, je naopak v pořádku)</p>
+<p>Třemi „zobáčky“ <code>&gt;&gt;&gt;</code> pak Python poprosí o instrukce.
+Je to jako v příkazové řádce, ale místo příkazů jako <code>cd</code> a <code>mkdir</code> sem budeš psát příkazy Pythonu.</p>
+<p>Práci s příkazovým řádkem si můžeš představit jako telefonní konverzaci:
+nejdřív ses s počítačem bavil/a pomocí příkazů jako <code>cd</code>.
+Příkaz <code>python</code> znamená „dej mi prosím k telefonu Python!“
+Následující „konverzace“ bude s úplně jiným programem, i když okýnko s textem
+vypadá skoro stejně.</p>
+<p>Vyzkoušej si, že příkazy z příkazové řádky v Pythonu nefungují:</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cd</span> <span class="n">adresar</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
+    <span class="n">cd</span> <span class="n">adresar</span>
+       <span class="p p-Marker">^</span>
+<span class="gr">SyntaxError</span>: <span class="n">invalid syntax</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">whoami</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">NameError</span>: <span class="n">name &#39;whoami&#39; is not defined</span>
+</pre></div><p>Tohle je <em>chybová hláška</em>, která se objeví vždycky
+když Python nebude spokojený.
+V průběhu kurzu jich uvidíš ještě spoustu,
+takže si ji dobře prohlédni, ať ji příště poznáš.</p>
+<h2>První příkaz</h2>
+<p>Zkusme radši příkazy, kterým Python rozumí.</p>
+<p>Ze začátku použij Pythonu jako kalkulačku.
+Za tři zobáčky napiš třeba <code>2 + 3</code> a zmáčkni <kbd>Enter</kbd>.</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="go">5</span>
+</pre></div><p>Zobrazila se ti správná odpověď?
+Pokud ano, gratuluji! První příkaz v Pythonu máš za sebou.</p>
+<p>Zkusíš i odečítání?</p>
+<p>A jak je to s násobením?</p>
+<p>Na kalkulačce bys zadal/a <code>4 × 5</code>, což se na klávesnici píše špatně.
+Písmeno <code>x</code> i tečku Python používá k jiným účelům.</p>
+<p>Pro násobení proto Python používá symbol <code>*</code> (který možná znáš třeba z Excelu).</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">4</span> <span class="o">*</span> <span class="mi">5</span>
+<span class="go">20</span>
+</pre></div><p>Znaménka jako <code>+</code>, <code>-</code> a <code>*</code> se odborně nazývají <em>operátory</em>.</p>
+<div class="admonition style-note"><p>Mezery mezi čísly a operátorem nejsou nutné: <code>4*5</code> i <code>4       * 5</code> dělá
+to samé co <code>4 * 5</code>.
+Je ale zvykem psát kolem operátoru jednu mezeru z každé strany – tak jako
+v těchto materiálech.
+Kód je pak čitelnější.</p>
+</div><p>Operátor pro dělení je <code>/</code>.
+Při dělení může vzniknout necelé číslo, třeba dva a půl.
+Python vychází z angličtiny a používá desetinnou <em>tečku</em>, takže číslo 2,5 ukáže
+jako <code>2.5</code>:</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="go">2.5</span>
+</pre></div><p>Z důvodů do kterých teď nebudeme zabíhat Python rozlišuje mezi celými a
+reálnými čísly.
+Desetinná tečka se proto objeví i když vyjde číslo celé:</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="go">2.0</span>
+</pre></div><p>Občas se hodí použít dělení se zbytkem, kdy podíl zůstane jako celé číslo.
+Na to má Python operátory <code>//</code> (podíl) a <code>%</code> (zbytek):</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">5</span> <span class="o">//</span> <span class="mi">2</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span>
+<span class="go">1</span>
+</pre></div><p>Časem zjistíš že dělení se zbytkem je v programování překvapivě užitečné.
+Jestli si děláš poznámky, <code>//</code> i <code>%</code> si do nich určitě přidej!</p>
+<h3>Ukončení</h3>
+<p>Pokud ses dostal/a až sem, gratuluji!
+Python máš nejen nainstalovaný, ale taky ti funguje.
+Stačí ho už jen zavřít.
+To se dělá pomocí <code>quit()</code>, s prázdnými závorkami na konci.</p>
+<div class="highlight"><pre>
+<span class="gp">&gt;&gt;&gt;</span> quit()
+<span class="gp">(venv)$</span>
+</pre></div><p>Tím ukončíš konverzaci s Pythonem a „zavoláš k telefonu“
+zpátky příkazovou řádku.
+Zobáčky <code>&gt;&gt;&gt;</code> se změnily na výzvu
+příkazové řádky (která začíná <code>(venv)</code> a končí <code>$</code> nebo <code>&gt;</code>).
+Příkazy Pythonu, jako <code>1 + 2</code>, teď fungovat nebudou (dokud Python opět
+nepustíš ke slovu pomocí příkazu <code>python</code>).
+Zato příkazům jako <code>whoami</code> a <code>cd</code> teď počítač rozumět bude.</p>
+<p>Teď můžeš okno s příkazovou řádkou zavřít – buď zavři její okýnko,
+nebo na to můžeš použít textové příkazy.</p>
+<p>virtuální prostředí můžeš ukončit příkazem <code>deactivate</code> – tentokrát bez
+závorek:</p>
+<div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(venv)</span><span class="gp">$ </span>deactivate
+</pre></div><p>A celou příkazovou řádku můžeš zavřít příkazem <code>exit</code>:</p>
+<div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">exit</span>
+</pre></div><p>Pro cvik si zkus Python znovu spustit – nejdřív otevři příkazovou řádku,
+pak donaviguj do adresáře s virtuálním prostředím,
+aktivuj virtuální prostředí a nakonec spusť Python samotný.</p>

@@ -1,0 +1,132 @@
+<h1>Print a chybové hlášky</h1>
+<p>Otevři si v editoru svůj soubor <code>ahoj.py</code>, ve kterém máš napsáno:</p>
+<div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ahoj světe!&quot;</span><span class="p">)</span>
+</pre></div><p>Program spusť:</p>
+<ul>
+<li>pokud ti už na začátku příkazové řádky nesvítí <code>(venv)</code>,
+aktivuj si virtuální prostředí,</li>
+<li>pomocí <code>cd</code> donaviguj do adresáře s programem,</li>
+<li>zadej <code>python ahoj.py</code>.</li>
+</ul>
+<p>Funguje? Doufám, že stále ano.</p>
+<p>Zkus přidat další řádek, aby program vypadal takhle:</p>
+<div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ahoj světe!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jak se máš?&quot;</span><span class="p">)</span>
+</pre></div><p>Program spusť znovu.
+Zjistíš, že se vypsaly dva řádky.</p>
+<p>Abys nemusel/a v příkazové řádce stále dokola psát <code>python ahoj.py</code>,
+zkus zmáčknout na klávesnici šipku nahoru, <kbd>↑</kbd>.
+Vrátíš se tak k předchozímu příkazu, který stačí „odklepnout“ pomocí
+<kbd>Enter</kbd>.</p>
+<h2>Jak funguje program</h2>
+<p>Teď, když program běží, se můžeme podívat, co se při
+jeho spuštění vlastně děje.
+Je to zatím docela jednoduché: v souboru jsou příkazy,
+příkazy se provádějí jeden po druhém,
+odshora dolů.
+Program je jako recept na vaření nebo návod na skříňku z IKEA:
+seznam instrukcí, které říkají co je potřeba udělat.</p>
+<p>Zanedlouho budou tvoje programy mnohem složitější,
+ale základní myšlenka bude stále stejná:
+počítač „čte“ odshora dolů a provádí příkazy jeden po druhém.</p>
+<h2>Print: vypisování a výrazy</h2>
+<p>A z jakých že instrukcí se náš „recept“ skládá?</p>
+<p>Můžeš použít jakýkoli příkaz, který napíšeš do interaktivního módu Pythonu
+(t.j. za <code>&gt;&gt;&gt;</code> v příkazové řádce).
+U programu v souboru ovšem Python nevypisuje výsledek každého zadaného příkazu.
+Když do souboru napíšeš třeba řádek <code>1 + 2</code> (bez <code>print</code>), Python
+sice spočítá výsledek, ale nikde ho neukáže.
+Proč?
+Velké programy obsahují tisíce příkazů; kdyby se každý mezivýsledek vypisoval,
+nebylo by to vůbec přehledné.</p>
+<p>Proto když v programu chceš říct Pythonu aby nějaký výsledek vypsal,
+musíš použít <code>print</code>.
+Zkus si sám/sama pustit <code>python</code> interaktivně a ověřit,
+že tenhle příkaz funguje stejně jako v programu:</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ahoj!&quot;</span><span class="p">)</span>
+<span class="go">ahoj!</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">quit</span><span class="p">()</span>
+</pre></div><p>To <code>print</code> (a i <code>quit</code>) je <em>funkce</em>.
+O funkcích se obecně budeme bavit později;
+teď stačí vědět, že když napíšeš <code>print</code> a za to něco do závorky,
+Python to vypíše.</p>
+<h2>Jak číst chyby</h2>
+<p>Často zjistíš, že program, který napíšeš, nebude fungovat hned napoprvé.
+Počítač je hloupý stroj; pokud instrukce nenapíšeš přesně podle pravidel jazyka
+Python, neumí si domyslet, co po něm chceš.
+Ale nevěš hlavu, stává se to všem programátorům.
+Důležité je vědět, jak chybu najít.
+A k tomu ti pomůžou chybové výpisy.</p>
+<p>Kdybys třeba v příkazu <code>print(Jak se máš?)</code> zapomněl/a uvozovky,
+dostaneš následující hlášku:</p>
+<pre>
+  File "<span class="plhome">~/naucse-python</span>/01/ahoj.py", line <span class="err-lineno">11</span>
+    print(Jak se máš?)
+              ^
+<span class="err-exctype">SyntaxError</span>: invalid syntax
+</pre><p>Při chybě Python napřed zmíní jméno souboru a
+<span class="err-lineno">číslo řádku</span>, na kterém si chyby všimnul.
+Potom vypíše celý řádek s chybou
+a nakonec oznámí <span class="err-exctype">druh chyby</span>
+(v tomto případě je to „syntaktická chyba“)
+a případně nějaké bližší upřesnění.</p>
+<div class="admonition note"><p class="admonition-title">Pro zvídavé</p>
+<p>Jak se od téhle chyby liší ta, která nastane, když zkusíš sečíst číslo a řetězec?
+Nebo když zkusíš dělit nulou?
+Nebo když zapomeneš jen uvozovku za textem?</p>
+</div><p>Chybové hlášky můžou být ze začátku těžko pochopitelné,
+zvyknout se na ně dá asi jenom praxí.
+Pro tebe bude ze začátku důležité hlavně ono číslo řádku.
+Když víš, že chyba je na řádku <span class="err-lineno">11</span>,
+můžeš se podívat na tento řádek a zkusit chybu najít.</p>
+<p>Když chyba není na daném řádku, může být ještě
+o pár řádků výš nebo níž:
+Python občas nesdílí lidské představy o tom, kde přesně chyba <em>je</em>.
+Ukáže jen, kde si jí sám <em>všimnul</em>.</p>
+<p>V našem případě je chyba v tom, že kolem řetězce <em>Jak se máš?</em> nejsou uvozovky.
+Přidej je a program znovu spusť.
+Jestli funguje, gratuluji!
+Jinak chybu opět oprav a opakuj, dokud to nebude fungovat :)</p>
+<h2>Další příkazy</h2>
+<p>Zkus do programu postupně, po jednom, přidávat další řádky.
+Po přidání každého dalšího <code>print</code> program znovu spusť a vyzkoušej
+co dělá.</p>
+<div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ahoj světe!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jak se máš?&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span> <span class="o">-</span> <span class="mf">2.2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="p">(</span><span class="mi">4</span> <span class="o">+</span> <span class="mi">6</span><span class="p">)</span> <span class="o">*</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Součet čísel 3 a 8 je&quot;</span><span class="p">,</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">8</span><span class="p">)</span>
+</pre></div><p>Proč jsou některé hodnoty v uvozovkách a některé ne?
+Pokud chceš v Pythonu pracovat s <em>textem</em>, musíš ho obalit do uvozovek,
+aby Python věděl, že se k němu má chovat jinak než k <em>instrukcím</em> jako <code>print</code>.
+Více se dozvíš později, zatím si zapamatuj, že se takovýto text označuje v programovací
+hantýrce jako <code>řetězec</code>.</p>
+<p>Obecně může být v závorkách za <code>print</code> několik <em>výrazů</em>
+(angl. <em>expressions</em>) oddělených čárkou.
+A co že je ten výraz?
+V našem programu máš několik příkladů:
+výraz je číslo, řetězec nebo nějaká (třeba matematická) operace
+složená z více výrazů.
+Třeba výraz <code>3 + 8</code> sčítá výrazy <code>3</code> a <code>8</code>.</p>
+<div class="admonition style-note"><p class="admonition-title">Typografická vsuvka</p>
+<p>Všimni si stylu zápisu: jako v češtině se po otevírací závorce a před
+uzavírací závorkou nepíše mezera; na rozdíl od češtiny ale mezera není
+mezi <code>print</code> a závorkou.
+Nejde o vsuvku.</p>
+<div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ahoj!&quot;</span><span class="p">)</span>
+</pre></div><p>S čárkou je to jako v češtině: mezeru píšeme po čárce, ale ne před ní:</p>
+<div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div><p>Kolem operátorů jako <code>+</code> a <code>/</code> se obyčejně píše jedna mezera zleva a
+jedna zprava. Někdy je ale přehlednější obě vynechat:</p>
+<div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">8</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jedna a půl je&quot;</span><span class="p">,</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</pre></div><p>Tyhle zásady jsou tu jen proto, aby se program dobře četl ostatním lidem.
+Samotný Python mezery kolem slov ignoruje (když nejsou v uvozovkách).
+Můžeš klidně napsat něco jako:</p>
+<div class="highlight"><pre><code>print      (   "Ahoj světe!"
+                                )</code></pre></div><p>Ale budoucí kolegové tě pak nejspíš nebudou mít rádi.</p>
+</div>

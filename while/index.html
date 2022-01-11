@@ -1,0 +1,94 @@
+<h1>While</h1>
+<p>Kromě cyklu <code>for</code> máme ještě druhý typ cyklu: <code>while</code> (angl. <em>dokud</em>).
+Na rozdíl od <code>for</code>, kde <em>předem známe počet opakování</em>,
+se while používá, když cyklus závisí na nějaké podmínce.
+Tělo cyklu se opakuje, dokud je podmínka splněna.
+Zkus si naprogramovat následující postup pro zubaře:</p>
+<ul>
+<li>Řekni, aby pacient řekl „Ááá“, a počkej na odpověď</li>
+<li>Dokud pacient <em>ne</em>řekl „Ááá“:<ul>
+<li>Vynadej pacientovi</li>
+<li>Znovu počkej na odpověď</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">odpoved</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Řekni Ááá! &#39;</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">odpoved</span> <span class="o">!=</span> <span class="s1">&#39;Ááá&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Špatně, zkus to znovu&#39;</span><span class="p">)</span>
+    <span class="n">odpoved</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Řekni Ááá! &#39;</span><span class="p">)</span>
+</pre></div><p>Ale pozor! Je velice jednoduché napsat cyklus,
+jehož podmínka bude splněna vždycky.
+Takový cyklus se bude opakovat donekonečna.</p>
+<ul>
+<li>Dokud je pravda pravdivá:<ul>
+<li>Napiš náhodné číslo</li>
+<li>Napiš hlášku</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Číslo je&#39;</span><span class="p">,</span> <span class="n">randrange</span><span class="p">(</span><span class="mi">10000</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(Počkej, než se počítač unaví...)&#39;</span><span class="p">)</span>
+</pre></div><p>Program se dá přerušit zmáčknutím
+<kbd>Ctrl</kbd>+<kbd>C</kbd>.
+Tahle klávesová zkratka vyvolá v programu chybu
+a program se – jako po každé chybě – ukončí.</p>
+<div class="admonition note"><p class="admonition-title">Pro macOS</p>
+<p>I na Macu je to opravdu <kbd>Ctrl</kbd>+<kbd>C</kbd>, nikoli
+<kbd>⌘ Cmd</kbd>+<kbd>C</kbd>.</p>
+</div><div class="admonition note"><p class="admonition-title">Pro ostatní systémy</p>
+<p><kbd>Ctrl</kbd>+<kbd>C</kbd> je velice stará zkratka, zavedená ještě před
+grafickými programy které ji začaly používat pro kopírování.
+Když dnes používáš textové programy v okýnku,
+musíš pro kopírování použít složitější zkratky:</p>
+<ul>
+<li><p>Kopírovat:
+<kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd> nebo
+<kbd>Ctrl</kbd>+<kbd>Insert</kbd></p>
+</li>
+<li><p>Vložit:
+<kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>V</kbd> nebo
+<kbd>Shift</kbd>+<kbd>Insert</kbd></p>
+</li>
+</ul>
+<p>Případně můžeš najít příslušné operace v menu.
+Na Windows se menu skrývá pod ikonkou v levém horním rohu okýnka;
+funkce pro kopírování jsou v podmenu Edit.
+Na starších Windows tam najdeš i <em>Mark</em>, způsob jak označit text.</p>
+<p>A na Linuxu jde jen označit text a pak ho (bez <kbd>Ctrl</kbd>+<kbd>C</kbd>)
+vložit prostředním tlačítkem myši.</p>
+</div><h2>Break</h2>
+<p>A nakonec, existuje příkaz <code>break</code>, který z cyklu „vyskočí“:
+začnou se hned vykonávat příkazy za cyklem.</p>
+<p>Cyklus <code>while</code> se dívá na podmínku jen na začátku každého průchodu cyklem.
+Občas ale chceš podmínku uprostřed nebo na konci.
+Třeba „zubařský“ program výše by se dal napsat i takto:</p>
+<ul>
+<li>Opakuj:<ul>
+<li>Zeptej se na odpověd</li>
+<li>Je-li odpověď „Ááá“, zavtipkuj a ukonči cyklus</li>
+<li>Vynadej uživateli. (Sem se program dostane jen při špatné odpovědi.)</li>
+</ul>
+</li>
+<li>Dokonči operaci</li>
+</ul>
+<p>V překladu do Pythonu využiješ kombinace <code>if</code> a <code>break</code>:</p>
+<div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">odpoved</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Řekni Ááá! &#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">odpoved</span> <span class="o">==</span> <span class="s1">&#39;Ááá&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Bééé&#39;</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Špatně, zkus to znovu&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hotovo, ani to nebolelo.&#39;</span><span class="p">)</span>
+</pre></div><p>Příkaz <code>break</code> se dá použít jenom v cyklu (<code>while</code> nebo <code>for</code>)
+a pokud máš víc cyklů zanořených v sobě, vyskočí jen z toho vnitřního.</p>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>  <span class="c1"># Vnější cyklus</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>  <span class="c1"># Vnitřní cyklus</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">j</span> <span class="o">*</span> <span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">j</span><span class="p">:</span>
+            <span class="k">break</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
