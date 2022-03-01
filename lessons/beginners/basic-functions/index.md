@@ -64,15 +64,17 @@ Návratová hodnota funkce `input` je řetězec s odpovědí uživatele.
 
 Co ale když nechceme pracovat s řetězcem, ale třeba s číslem?
 Tady nám pomůže skupina funkcí, které umí převádět čísla na řetězce a zpátky.
-Každý ze tří <em>typů</em> (angl. <em>types</em>) proměnných, které zatím známe,
+Každý ze čtyř <em>typů</em> (angl. <em>types</em>) proměnných, které zatím známe,
 má funkci, která vezme nějakou hodnotu a vrátí podobnou hodnotu „svého“ typu.
 Na celá čísla je funkce `int` (z angl. *integer*), na reálná čísla je `float`
-(z angl. *floating-point*), a pro řetězce `str` (z angl. *string*).
+(z angl. *floating-point*), pro řetězce `str` (z angl. *string*),
+a pro pravdivostní hodnoty `bool` (z angl. *boolean*).
 
 ```python
 int(x)              # převod na celé číslo
 float(x)            # převod na reálné číslo
 str(x)              # převod na řetězec
+bool(x)             # převod na pravdivostní hodnotu
 ```
 
 Příklady:

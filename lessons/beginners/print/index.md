@@ -71,7 +71,7 @@ ahoj!
 To `print` (a i `quit`) je *funkce*.
 O funkcích se obecně budeme bavit později;
 teď stačí vědět, že když napíšeš `print` a za to něco do závorky,
-Python to vypíše,
+Python to vypíše.
 
 
 ## Jak číst chyby

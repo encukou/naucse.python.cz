@@ -74,7 +74,7 @@ Kdyby byl program delší (několikastránkový),
 jak bys zajistil{{a}}, že jedno z těch čísel nepřehlédneš?
 
 Existuje způsob, jak program napsat,
-aniž bys musela pokaždé přepisovat všechna čísla:
+aniž bys musel{{a}} pokaždé přepisovat všechna čísla:
 stranu čtverce si „pojmenuješ“ a potom používáš jenom její jméno.
 V Pythonu na pojmenovávání hodnot slouží *proměnné* (angl. *variables*).
 Používají se takto:
@@ -191,7 +191,7 @@ pro teď to budou kouzelná zaříkadla.
   promenna = float(input('Zadej číslo: '))
   ```
 
-Místo textu `'Zadej …'` se dá napsat i jiná výzva. 
+Místo textu `'Zadej …'` se dá napsat i jiná výzva.
 A výsledek se samozřejmě dá uložit i do jiné proměnné než `promenna`.
 
 Hotový program může vypadat takto:

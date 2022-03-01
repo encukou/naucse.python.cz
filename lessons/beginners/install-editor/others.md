@@ -53,7 +53,7 @@ Editory často podporují instalaci pluginů, které mohou psaní kódu usnadnit
 a pomoci s jeho kontrolou.
 Jeden z neužitečnějších je plugin pro kontrolu správného stylu zdrojového kódu.
 
-Tak jako čeština má Python typografická providla.
+Tak jako čeština má Python typografická pravidla.
 Například za čárkou se píše mezera, ale před ní ne.
 Jsou nepovinná, program bude fungovat i při jejich nedodržení,
 ale pomáhají psát přehledný kód, tak je dobré je dodržovat už od začátku.
